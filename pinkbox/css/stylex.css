@@ -1,0 +1,117 @@
+:root{
+	--clr_success: #3eDfBA;
+	--clr_warning: #Df3aBA;
+	--clr_primary: #32BADf;
+	//0-9a-f base 16
+	//255 = ff 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid blue;
+	width: 100%;
+	height: 80px;
+}
+
+.header h2{
+	font-family: "Segoe UI Light", sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 35px;
+	font-weight: 100;
+	color: var(--clr_primary);
+}
+
+.header h2 span{
+	color: green;
+}
+.dp{
+	position: sticky;
+	border: 2px solid blue;
+	width: 70px;
+	height: 70px;
+	float: right;
+	margin-top: -75px;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+
+.dp img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	transform: translate(-2px, -2px);
+}
+.row{
+	position: relative;
+	/*display: flex;*/
+	padding: 10px;
+	border: 2px solid var(--clr_warning);
+	width: 100%;
+	height: 70vh;
+	margin-top: 7px;
+}
+
+.card{
+	position: absolute;
+	border: 2px solid #f1f1f1;
+	width:47.5%;
+	height: 85%;
+	border-radius: 15px;
+	box-shadow: 8px 14px 20px rgba(0, 0, 0, 0.3);
+	padding: 15px;
+} 
+
+.card .left{
+	position: relative;
+	float: left;
+}
+
+.card.right{
+	position: relative;
+	float: right;
+}
+
+.footer{
+	position: relative;
+	border: 2px solid darkgoldenrod;
+	width: 100%;
+	height: 30px;
+	bottom: 0px;
+} 
+
+.footer_col{
+	position: fixed;
+	border: 2px solid blue;
+	width: 100%;
+	height: 75px;
+	bottom: 0px;
+}
+
+.contacts{
+	border: 2px solid var(--clr_primary);
+	width: 100%;
+	height: 45px;
+}
+
+.copyright{
+	border: 2px solid var(--clr_primary);
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	font-style: italic;
+	color: var(--clr_success);
+}
